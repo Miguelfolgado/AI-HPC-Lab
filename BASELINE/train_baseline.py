@@ -46,7 +46,7 @@ training_args = TrainingArguments(
     do_eval=True,
     learning_rate=3e-5,
     per_device_train_batch_size=4,
-    num_train_epochs=2,
+    num_train_epochs=4,
     weight_decay=0.01,
     logging_dir="./logs",
     logging_steps=100,
@@ -57,7 +57,7 @@ training_args = TrainingArguments(
 trainer = Trainer(
     model=model,
     args=training_args,
-    train_dataset=tokenized_datasets["train"].select(range(2000)),
+    train_dataset=tokenized_datasets["train"].select(range(10000)),
     eval_dataset=tokenized_datasets["validation"].select(range(500)),
     data_collator=default_data_collator,
 )
