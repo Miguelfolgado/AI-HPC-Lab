@@ -1,0 +1,39 @@
+slurmstepd: info: Setting TMPDIR to /scratch/1445127. Previous errors about TMPDIR can be discarded
+Running on host: c207-3
+Wed Oct  8 15:53:42 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 570.86.15              Driver Version: 570.86.15      CUDA Version: 12.8     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-PCIE-40GB          On  |   00000000:17:00.0 Off |                    0 |
+| N/A   41C    P0             61W /  250W |       1MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+mié 08 oct 2025 15:53:42 CEST
+Loading dataset and model...
+Tokenizing dataset...
+Using device: cuda
+{'loss': 0.7158, 'grad_norm': 0.029656721279025078, 'learning_rate': 2.703e-05, 'epoch': 0.2}
+{'loss': 0.0009, 'grad_norm': 0.016557784751057625, 'learning_rate': 2.4030000000000002e-05, 'epoch': 0.4}
+{'loss': 0.0006, 'grad_norm': 0.01291382685303688, 'learning_rate': 2.103e-05, 'epoch': 0.6}
+{'loss': 0.0149, 'grad_norm': 0.01130176242440939, 'learning_rate': 1.803e-05, 'epoch': 0.8}
+{'loss': 0.0004, 'grad_norm': 0.008581817150115967, 'learning_rate': 1.503e-05, 'epoch': 1.0}
+{'loss': 0.0004, 'grad_norm': 0.008164046332240105, 'learning_rate': 1.2030000000000002e-05, 'epoch': 1.2}
+{'loss': 0.0003, 'grad_norm': 0.007415382191538811, 'learning_rate': 9.03e-06, 'epoch': 1.4}
+{'loss': 0.0003, 'grad_norm': 0.006876783911138773, 'learning_rate': 6.030000000000001e-06, 'epoch': 1.6}
+{'loss': 0.0003, 'grad_norm': 0.007263482082635164, 'learning_rate': 3.0300000000000002e-06, 'epoch': 1.8}
+{'loss': 0.0003, 'grad_norm': 0.006832589395344257, 'learning_rate': 3.0000000000000004e-08, 'epoch': 2.0}
+{'train_runtime': 78.2598, 'train_samples_per_second': 51.112, 'train_steps_per_second': 12.778, 'train_loss': 0.07340631134621799, 'epoch': 2.0}
+Total training time: 5.29 minutes
+mié 08 oct 2025 15:59:57 CEST
