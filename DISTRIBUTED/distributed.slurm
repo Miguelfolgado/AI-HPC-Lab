@@ -2,9 +2,9 @@
 #------------------------------------------------------
 # Example SLURM job script with SBATCH requesting GPUs
 #------------------------------------------------------
-#SBATCH -J baseline_bert            # Job name
-#SBATCH -o logs/baseline_bert_%j.o       # Name of stdout output file(%j expands to jobId)
-#SBATCH -e logs/baseline_bert_%j.e       # Name of stderr output file(%j expands to jobId)
+#SBATCH -J distributed            # Job name
+#SBATCH -o logs/distributed_bert_%j.o       # Name of stdout output file(%j expands to jobId)
+#SBATCH -e logs/distributed_bert_%j.e       # Name of stderr output file(%j expands to jobId)
 #SBATCH --gres=gpu:a100:2   # Request 1 GPU of 2 available on an average A100 node
 #SBATCH -c 32               # Cores per task requested
 #SBATCH -t 02:00:00         # Run time (hh:mm:ss) - 10 min
